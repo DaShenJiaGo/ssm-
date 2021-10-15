@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这个地方写的是你接口的目录地址-->
+<mapper namespace="com.bejing.dao.StuderssmDao">
+    <insert id="addStuderssm">
+        insert into studerssm(name, age) VALUE (#{name},#{age})
+    </insert>
+
+    <select id="selcetStduerssm" resultType="Studerssm">
+        select id,name,age from studerssm
+    </select>
+
+
+
+</mapper>
